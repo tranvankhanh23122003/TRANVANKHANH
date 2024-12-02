@@ -1,0 +1,435 @@
+/* MENUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU */
+
+
+
+body{
+    background-color:black;
+    background-size: cover;
+    background-position-y: -100;
+
+}
+#header{
+    background-color:#181A20;
+}
+nav{
+    display: flex;
+    justify-items: center;
+      justify-content: space-between; 
+      width: 100%;
+      margin: 0;
+      box-sizing: border-box;
+      padding: 6px 10px;
+      background-color: #181A20;
+      margin-left: 5px;
+      transform: translateY(2px);      
+}
+#logo{
+    padding: 5px 0px;
+    display: flex;
+}
+#logo img{
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+   
+}
+#logo p{
+    color: yellow;
+    font-size: 20px;
+    margin-top: 12px;
+    padding: 0;
+    margin-left: 10px;
+}
+a{
+    text-decoration: none;
+    
+}
+#timkiem{
+    display: flex;
+    align-items: center; 
+    padding:0px 200px;
+
+}
+#timkiem p {
+    color: white;
+    margin: 0;
+}
+#timkiem input {
+    padding: 5px 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+#menu{
+    display: flex;
+list-style: none;   
+margin: 0;
+padding: 0;
+    
+}
+
+#menu li a:hover {
+    transform: scale(1.1); /* Làm cho chữ to lên 1.1 lần khi hover */
+}
+#menu li a{
+    position: relative;
+    color: white;
+    display: block;
+    padding: 20px 10px;
+    text-decoration: none;
+
+}
+#menu ul.name-menu{
+     display: none;   /*  ẩn menu con */
+    position: absolute;
+    background-color: #181A20;  
+    padding: 15px 20px;
+    list-style: none;
+    width: 600px;  
+    
+}
+#menu ul.name-menu-1{
+    display: none;   /*  ẩn menu con */
+   position: absolute;
+   background-color: #181A20;  
+   padding: 0px 20px;
+   list-style: none;
+   width: 400px;  
+   
+   
+}
+/* Ẩn menu con mặc định */
+.lenguage ul.name-menu-lenguage {
+    display: none;   /*  ẩn menu con */
+    position: absolute;
+    background-color: #181A20;  
+    padding: 0px 20px;
+    list-style: none;
+    width: 300px;  
+right: 10px;
+}
+
+/* Khi hover vào thẻ p (chứa icon) thì hiện menu con */
+.lenguage p:hover + ul.name-menu-lenguage {
+    display: block;
+}
+
+/* Hiệu ứng khi hover vào các mục menu con */
+.lenguage ul.name-menu-lenguage li:hover a {
+    color: yellow; /* Đổi màu chữ khi hover */
+    transition: color 0.3s ease; /* Hiệu ứng chuyển đổi màu mượt */
+}
+
+
+
+
+#menu ul.name-menu li:hover a {  /* hiệu ứng menu con*/
+    /* background-color: #333;  */
+    color: yellow; 
+}
+ #menu li:hover>ul.name-menu{ /*hover vào sẽ hiện menu con */
+    display: block;
+}
+#menu li:hover>ul.name-menu-1{ /*hover vào sẽ hiện menu con */
+    display: block;
+}
+
+
+#menu  li:hover a{
+color: yellow;
+}
+#menu ul.name-menu a{
+    padding: 15px 15px;
+
+}
+
+
+.name-menu .row {
+    display: flex; 
+    width: 100%;
+}   
+.name-menu .col-6 {
+    flex: 1; 
+    padding: 0 10px;
+}
+.name-menu li {
+    margin: 5px 0; 
+}
+/* .chu-vang{
+    color: yellow;
+}
+.row .col-6 p{
+        color: white;
+        padding: 100px 150px;
+        font-size: 30px;
+} */
+.tieu-de{
+    padding: 100px 150px;
+
+}
+.name-menu p{
+padding: 0px 22px;
+color: #ccc;
+
+}
+.name-menu-1 p{
+    padding: 0px 22px;
+    color: #ccc;
+    
+    }
+.name-menu .row .col-6 .title {
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding: 0px 15px;
+}
+.name-menu-1 .title{
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding: 0px 15px;
+
+}
+
+.name-menu .title2 {
+  font-size: 0.9rem;
+  color: #6c757d; 
+  margin-left:0px; 
+  margin-top: 0; 
+}
+.name-menu-1 .title2 {
+    font-size: 0.9rem;
+    color: #6c757d; 
+    margin-left:0px; 
+    margin-top: 0; 
+  }
+ 
+li a i {
+    margin-right: 0.5rem; /* Tạo khoảng cách giữa icon và chữ Sport */
+    color: #007bff; /* Màu sắc cho biểu tượng (tuỳ chọn) */
+    font-size: 1.2rem; /* Tăng kích thước biểu tượng nếu cần */
+  }
+  .title2 {
+    font-size: 0.9rem;
+    color: #6c757d; /* Màu sắc nhẹ hơn */
+    margin-top: 0.3rem; /* Tạo khoảng cách giữa Sport và nội dung mô tả */
+  }
+  h1 input{
+width: 250px;
+height: 30px;
+  }
+  h1 button{
+    width: 100px;
+height: 35px;
+background-color: yellow;
+cursor: pointer;
+  }
+  body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+.header-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* MUA CRYPTOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1f1f1f; /* Tối nhưng dễ nhìn */
+    color: #e0e0e0; /* Màu chữ sáng để dễ đọc */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    background-color: #2c2c2c; /* Tối và mượt mà */
+    width:1060px;
+    
+}
+.navbar a{
+margin-right: 20px;
+margin-left: 20px;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffd700; /* Màu vàng dễ nhìn */
+    text-decoration: none;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #e0e0e0;
+    font-size: 1rem;
+}
+
+.nav-link.active {
+    color: #ffd700; /* Màu vàng khi chọn */
+}
+
+.nav-link:hover {
+    color: #ffcc33; /* Màu sáng hơn khi hover */
+}
+
+/* Header */
+.header {
+    padding: 20px 0;
+}
+
+.header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffd700; /* Màu vàng sáng */
+}
+
+/* Content */
+.content {
+    display: flex;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+/* Tiền mã hóa phổ biến */
+.crypto-list {
+    background-color: #333; /* Màu tối cho card */
+    padding: 20px;
+    border-radius: 8px;
+    width: 45%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Tạo độ nổi */
+}
+
+.crypto-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #ffd700; /* Màu vàng cho tiêu đề */
+    margin-bottom: 20px;
+}
+
+.crypto-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #444; /* Đường viền nhẹ */
+}
+
+.text-danger {
+    color: #f44336; /* Màu đỏ nhạt cho giảm giá */
+}
+
+.text-success {
+    color: #4caf50; /* Màu xanh lá mạ cho tăng giá */
+}
+
+/* Form Mua/Bán */
+.trade-box {
+    background-color: #333; /* Màu tối cho card */
+    padding: 20px;
+    border-radius: 8px;
+    width: 45%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Tạo độ nổi */
+}
+
+.tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.tab {
+    padding: 10px;
+    background-color: #444; /* Màu nền tối cho tab */
+    border: none;
+    color: white;
+    font-size: 1rem;
+    flex: 1;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.tab.active {
+    background-color: #ffd700; /* Màu vàng khi tab được chọn */
+    color: #1f1f1f; /* Màu chữ đậm khi chọn */
+}
+
+.tab:hover {
+    background-color: #555; /* Màu sáng hơn khi hover */
+}
+
+/* Form Inputs */
+.trade-form .form-group {
+    margin-bottom: 20px;
+}
+
+.trade-form label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #e0e0e0; /* Màu chữ sáng cho label */
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    background-color: #444; /* Màu nền input */
+    border: 1px solid #555; /* Màu viền nhẹ */
+    color: #e0e0e0; /* Màu chữ sáng cho input */
+    border-radius: 5px;
+}
+
+.currency-btn {
+    padding: 10px;
+    background-color: #444; /* Màu nền tối cho nút */
+    color: white;
+    border: 1px solid #555; /* Màu viền nhẹ */
+    cursor: pointer;
+    flex-shrink: 0;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.currency-btn:hover {
+    background-color: #555; /* Màu sáng hơn khi hover */
+}
+
+/* Submit Button */
+.btn-submit {
+    width: 100%;
+    padding: 12px;
+    background-color: #ffd700; /* Màu vàng cho nút submit */
+    color: #1f1f1f; /* Màu chữ tối cho nút */
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #e0a800; /* Màu sáng hơn khi hover */
+}
